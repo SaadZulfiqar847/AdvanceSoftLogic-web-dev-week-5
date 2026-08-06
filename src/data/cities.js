@@ -1,0 +1,30 @@
+// A fixed, curated list of cities for the Cities page — kept separate
+// from api.js since this is static reference data, not a fetched result.
+// Sorted alphabetically by name, matching the doc's "A-Z" requirement.
+export const CITY_LIST = [
+    'Amsterdam',
+    'Berlin',
+    'Cairo',
+    'Dubai',
+    'Edinburgh',
+    'Faisalabad',
+    'Geneva',
+    'Houston',
+    'Istanbul',
+    'Jakarta',
+    'Karachi',
+    'Lahore',
+    'Madrid',
+    'Nairobi',
+    'Oslo',
+    'Paris',
+    'Quebec',
+    'Rome',
+    'Singapore',
+    'Tokyo',
+    'Utrecht',
+    'Vienna',
+    'Wellington',
+    'Yerevan',
+    'Zurich',
+];
