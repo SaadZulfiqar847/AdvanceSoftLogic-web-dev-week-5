@@ -232,4 +232,59 @@ body {
 @keyframes driftCloud {
   0%, 100% { transform: translateX(0); }
   50% { transform: translateX(6px); }
+
+  .home-page {
+  padding: 0 1rem 2rem 1rem;
+}
+
+.app-header {
+  text-align: center;
+  padding: 2.5rem 1rem 2rem 1rem;
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+}
+
+.app-header .tagline {
+  color: #8096a6;
+  margin-top: 0.4rem;
+}
+
+.search-form {
+  max-width: 480px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: #4ea8de;
+  box-shadow: 0 0 0 3px rgba(78, 168, 222, 0.15);
+}
+
+.search-form button {
+  padding: 0.7rem 1.2rem;
+  background-color: #4ea8de;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #3a8bc0;
+}
+
+.error-message {
+  color: #c1594b;
 }
