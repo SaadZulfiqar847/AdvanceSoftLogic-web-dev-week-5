@@ -20,21 +20,21 @@ function WeatherResult({ location, weatherData, unit, onToggleUnit }) {
 
   return (
     <section className="weather-result">
-      <div className="weather-result-top">
-        <button className="unit-toggle" onClick={onToggleUnit}>
-          Switch to {unit === 'celsius' ? '°F' : '°C'}
-        </button>
-        <button
-          className={`star-btn large ${favorited ? 'favorited' : ''}`}
-          onClick={handleToggleFavorite}
-          aria-label={favorited ? 'Remove from favorites' : 'Add to favorites'}
-        >
-          {favorited ? '★' : '☆'}
-        </button>
-      </div>
+    <button
+        className={`star-btn corner ${favorited ? 'favorited' : ''}`}
+        onClick={handleToggleFavorite}
+        aria-label={favorited ? 'Remove from favorites' : 'Add to favorites'}
+      >
+        {favorited ? '★' : '☆'}
+      </button>
+
+      <h2 className="result-city-name">{location.name}, {location.country}</h2>
+
+      <button className="unit-toggle" onClick={onToggleUnit}>
+        Switch to {unit === 'celsius' ? '°F' : '°C'}
+      </button>
 
       <span className="weather-icon">{WEATHER_ICONS[weatherCode] || '🌡️'}</span>
-      <h2>{location.name}, {location.country}</h2>
       <p className="temperature-readout">{displayTemp}{unitSymbol}</p>
       <p className="conditions-label">{WEATHER_CODES[weatherCode] || 'Unknown'}</p>
       <p className="wind-readout">Wind: {weatherData.current.wind_speed_10m} km/h</p>
